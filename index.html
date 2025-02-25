@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mini hry</title>
+    
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h2>Hádání čísel</h2>
+        <button onclick="startButton()">Zahájit hru</button>
+        <div id="containerTwo" hidden>
+            <input type="number" id="guess" placeholder="zadejte svůj odhad">
+            <button onclick="check()">Odeslat</button>
+            <p id="generator"></p>
+            <p id="hint"></p>
+        </div>
+            <button onclick="restartGame()" hidden>Hrát znovu!</button>
+
+        <h2>Kámen, nůžky, papír</h2>
+        <button id="startGame" onclick="startGame()">Zahájit hru</button>
+        <div id="containerOne" hidden>
+            <button id="stone" onclick="play('Kámen')">Kámen</button>
+            <button id="scissors" onclick="play('Nůžky')">Nůžky</button>
+            <button id="paper" onclick="play('Papír')">Papír</button>
+            <p id="result"></p>
+        </div>
+            <button id="restartGameTwo" onclick="restartGameTwo()" hidden>Hrát znovu!</button>
+
+            <h2>Klikací hra</h2>
+            <h4>Úkolem je mít co největší počet kliknutí do doby než uběhne časomíra!</h4>
+            <button id="start" onclick="start()">Zahájit hru</button>
+            <div id="containerThree" hidden>
+                <button id="clicker" onclick="clickCount()">Klikej!</button>
+                <p id="timer"></p>
+                <p id="showClicks"></p>
+            </div>
+            <button id="restartGameThree" onclick="restartGameThree()" hidden>Hrát znovu!</button>
+    </body>
